@@ -1,0 +1,94 @@
+{
+  "version": "0",
+  "id": "e0239647-3495-851c-1b7f-38600426a57e",
+  "detail-type": "ECS Task State Change",
+  "source": "aws.ecs",
+  "account": "210418657724",
+  "time": "2019-11-11T23:32:18Z",
+  "region": "us-east-1",
+  "resources": [
+    "arn:aws:ecs:us-east-1:210418657724:task/dea7d7c5-d84d-42ab-a57e-1794e89705ca"
+  ],
+  "detail": {
+    "clusterArn": "arn:aws:ecs:us-east-1:210418657724:cluster/fargate-test",
+    "containers": [
+      {
+        "containerArn": "arn:aws:ecs:us-east-1:210418657724:container/f0d815af-7c8f-49f6-adf5-1dbac95439ff",
+        "exitCode": 137,
+        "lastStatus": "STOPPED",
+        "name": "fargate-app",
+        "image": "httpd:2.4",
+        "runtimeId": "5a71c2362d14ad7983d8bf54dde34d7c6997e58fd8276e75092e11f3b90c6bb3",
+        "taskArn": "arn:aws:ecs:us-east-1:210418657724:task/dea7d7c5-d84d-42ab-a57e-1794e89705ca",
+        "networkInterfaces": [
+          {
+            "attachmentId": "c6cade89-86ab-453b-be42-0754dc6319fe",
+            "privateIpv4Address": "172.31.45.234"
+          }
+        ],
+        "cpu": "0"
+      }
+    ],
+    "createdAt": "2019-11-11T22:34:15.802Z",
+    "launchType": "FARGATE",
+    "cpu": "256",
+    "memory": "512",
+    "desiredStatus": "STOPPED",
+    "group": "service:fargate-ttest",
+    "lastStatus": "STOPPED",
+    "overrides": {
+      "containerOverrides": [
+        {
+          "name": "fargate-app"
+        }
+      ]
+    },
+    "attachments": [
+      {
+        "id": "c6cade89-86ab-453b-be42-0754dc6319fe",
+        "type": "eni",
+        "status": "DELETED",
+        "details": [
+          {
+            "name": "subnetId",
+            "value": "subnet-08141254"
+          },
+          {
+            "name": "networkInterfaceId",
+            "value": "eni-04784c1695822af48"
+          },
+          {
+            "name": "macAddress",
+            "value": "0e:81:f5:cd:19:dd"
+          },
+          {
+            "name": "privateIPv4Address",
+            "value": "172.31.45.234"
+          }
+        ]
+      },
+      {
+        "id": "cb27e8c1-e0c2-4c85-8cec-6cf5f7ae441e",
+        "type": "sdi",
+        "status": "DELETED",
+        "details": []
+      }
+    ],
+    "connectivity": "CONNECTED",
+    "connectivityAt": "2019-11-11T22:34:19.897Z",
+    "pullStartedAt": "2019-11-11T22:34:32.66Z",
+    "startedAt": "2019-11-11T22:35:07.122Z",
+    "startedBy": "ecs-svc/9223370463356348059",
+    "stoppingAt": "2019-11-11T23:31:12.723Z",
+    "stoppedAt": "2019-11-11T23:32:18.396Z",
+    "pullStoppedAt": "2019-11-11T22:34:37.66Z",
+    "executionStoppedAt": "2019-11-11T23:31:55Z",
+    "stoppedReason": "Task stopped by user",
+    "stopCode": "UserInitiated",
+    "updatedAt": "2019-11-11T23:32:18.396Z",
+    "taskArn": "arn:aws:ecs:us-east-1:210418657724:task/dea7d7c5-d84d-42ab-a57e-1794e89705ca",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:210418657724:task-definition/sample-fargate:1",
+    "version": 8,
+    "platformVersion": "1.3.0"
+  }
+}
